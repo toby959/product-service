@@ -15,9 +15,10 @@ public class CreateProductRequest {
     private String name;
 
     private String description;
+
     @NotEmpty(message = "The field price cannot be null!!!")
     private BigDecimal price;
 
     @NotEmpty(message = "the field category _id cannot be null!!!")
-    private Long category;
+    private Long categoryId;
 }
